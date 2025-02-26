@@ -1,0 +1,48 @@
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 11, 26;
+  --background-end-rgb: 10, 11, 26;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    #0A0B1A,
+    #0A0B1A
+  );
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+  .nav-links {
+    display: flex !important;
+  }
+}
+
+/* Add these hover styles */
+.nav-link:hover {
+  color: #60A5FA !important;
+}
+
+/* For the button in HeroSection */
+.hover-blue:hover {
+  color: #93C5FD !important;
+}
+
+.hover-purple:hover {
+  color: #A78BFA !important;
+} 
