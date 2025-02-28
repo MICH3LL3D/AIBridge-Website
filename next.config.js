@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Enable static exports
-  basePath: '/aibridge-website', // Replace with your repo name
   images: {
     unoptimized: true,
   },
-  reactStrictMode: true,
+};
+
+// Only enable static export for GitHub Pages
+if (process.env.EXPORT_NEXT) {
+  nextConfig.output = 'export';
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig;

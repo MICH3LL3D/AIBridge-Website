@@ -16,12 +16,9 @@
 body {
   margin: 0;
   padding: 0;
-  color: white;
-  background: linear-gradient(
-    to bottom,
-    #0A0B1A,
-    #0A0B1A
-  );
+  color: black;
+  background: url('/img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {

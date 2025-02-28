@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Navbar from '@/components/Navbar'
-import EventCard from '@/components/EventCard'
 import EventRow from '@/components/EventRow'
 
 const events = [
@@ -84,7 +83,7 @@ export default function EventsPage() {
       margin: 0,
       padding: 0,
       position: 'relative',
-      backgroundImage: "url('/img/background.jpg')",
+      backgroundImage: "url('/aibridge-website/img/background.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

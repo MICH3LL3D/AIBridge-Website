@@ -11,7 +11,7 @@ export default function Home() {
       margin: 0,
       padding: 0,
       position: 'relative',
-      backgroundImage: "url('/img/background.jpg')",
+      backgroundImage: "url('/aibridge-website/img/background.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
