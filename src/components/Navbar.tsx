@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,12 +7,29 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Change background when scrolled more than 50px
+      const isScrolled = window.scrollY > 50
+      setScrolled(isScrolled)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <nav style={{
       position: 'fixed',
       width: '100%',
       zIndex: 50,
-      backgroundColor: 'transparent',
+      backgroundColor: scrolled 
+        ? 'rgba(96, 165, 250, 0.7)'  // Semi-transparent blue when scrolled
+        : 'transparent',              // Transparent when at top
+      backdropFilter: scrolled ? 'blur(10px)' : 'none',
+      transition: 'all 0.3s ease',
       padding: '1rem'
     }}>
       <div style={{
@@ -31,8 +48,8 @@ const Navbar = () => {
           <Image 
             src="/img/logo.png" 
             alt="AI Bridge Logo" 
-            width={100}
-            height={100}
+            width={70}
+            height={70}
           />
         </Link>
         

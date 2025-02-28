@@ -1,8 +1,11 @@
 'use client'
 import React from 'react'
 import ReviewSection from './ReviewSection'
+import { useScrollFade } from '@/hooks/useScrollFade'
 
 const MissionSection = () => {
+  const isVisible = useScrollFade()
+
   return (
     <>
       <section id="mission" style={{
@@ -14,9 +17,12 @@ const MissionSection = () => {
         position: 'relative',
         padding: '2rem'
       }}>
-        <div style={{
+        <div id="scroll-fade" style={{
           maxWidth: '800px',
-          textAlign: 'center'
+          textAlign: 'center',
+          opacity: isVisible ? 1 : 0,
+          transform: `translateY(${isVisible ? 0 : '20px'})`,
+          transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
         }}>
           <h2 style={{
             fontSize: '3.5rem',

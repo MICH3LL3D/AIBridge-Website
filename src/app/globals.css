@@ -45,4 +45,32 @@ body {
 
 .hover-purple:hover {
   color: #A78BFA !important;
+}
+
+.text path.motion {
+  stroke-dashoffset: -149px;
+  stroke-dasharray: 22px 1180px;
+}
+
+.member-card {
+  transform: translateY(0);
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-overlay {
+  animation: modalFade 0.3s ease-out;
 } 
