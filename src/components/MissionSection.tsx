@@ -18,7 +18,7 @@ const MissionSection = () => {
         padding: '2rem'
       }}>
         <div id="scroll-fade" style={{
-          maxWidth: '800px',
+          maxWidth: '70%',
           textAlign: 'center',
           opacity: isVisible ? 1 : 0,
           transform: `translateY(${isVisible ? 0 : '20px'})`,
@@ -34,7 +34,7 @@ const MissionSection = () => {
           }}>
             Our Mission
           </h2>
-          <p style={{
+          <h3 style={{
             fontSize: '2.5rem',
             color: 'white',
             marginBottom: '2rem',
@@ -43,10 +43,10 @@ const MissionSection = () => {
             WebkitTextFillColor: 'transparent'
           }}>
             Bridging the Gap Between AI and Industry
-          </p>
+          </h3>
           <p style={{
             fontSize: '1.5rem',
-            color: 'white',
+            color: '#e0e0e0',
             lineHeight: '1.8',
             marginBottom: '2rem'
           }}>

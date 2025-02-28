@@ -82,12 +82,7 @@ export default function EventsPage() {
       minHeight: '100vh',
       margin: 0,
       padding: 0,
-      position: 'relative',
-      backgroundImage: "url('/aibridge-website/img/background.jpg')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed'
+      position: 'relative'
     }}>
       <Navbar />
       <div style={{
@@ -98,7 +93,7 @@ export default function EventsPage() {
       }}>
         <h1 style={{
           color: 'white',
-          fontSize: '3rem',
+          fontSize: '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
           paddingTop: '5rem',

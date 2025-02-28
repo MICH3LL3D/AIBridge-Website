@@ -63,7 +63,7 @@ const ReviewSection = () => {
       </h2>
 
       <div style={{
-        maxWidth: '800px',
+        maxWidth: '60%',
         position: 'relative',
         padding: '2rem'
       }}>
@@ -116,7 +116,7 @@ const ReviewSection = () => {
         }}>
           <p style={{
             fontSize: '1.3rem',
-            color: 'white',
+            color: '#e0e0e0',
             marginBottom: '2rem',
             lineHeight: '1.6',
             fontStyle: 'italic'

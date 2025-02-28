@@ -205,11 +205,7 @@ export default function TeamPage() {
       minHeight: '100vh',
       margin: 0,
       padding: 0,
-      position: 'relative',
-      backgroundImage: "url('/img/background.jpg')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      position: 'relative'
     }}>
       <Navbar />
       <div style={{
@@ -219,18 +215,21 @@ export default function TeamPage() {
         padding: '2rem'
       }}>
         <h1 style={{ 
-          color: 'white', 
-          fontSize: '3rem', 
-          textAlign: 'center', 
+          color: '#e0e0e0',
+          fontSize: '4rem',
+          textAlign: 'center',
+          marginBottom: '3rem',
           paddingTop: '5rem',
-          marginBottom: '3rem'
+          background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent'
         }}>
           Our Team
         </h1>
 
         <h2 style={{
           color: 'white',
-          fontSize: '3rem',
+          fontSize: '2.5rem',
           marginBottom: '2rem',
           marginLeft: '1rem',
           background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
@@ -264,7 +263,7 @@ export default function TeamPage() {
 
         <h2 style={{
           color: 'white',
-          fontSize: '3rem',
+          fontSize: '2.5rem',
           marginBottom: '2rem',
           paddingTop: '2rem',
           marginLeft: '1rem',

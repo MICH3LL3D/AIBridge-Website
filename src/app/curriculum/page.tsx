@@ -252,12 +252,7 @@ export default function CurriculumPage() {
       minHeight: '100vh',
       margin: 0,
       padding: 0,
-      position: 'relative',
-      backgroundImage: "url('/aibridge-website/img/background.jpg')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed'
+      position: 'relative'
     }}>
       <Navbar />
       <div style={{
@@ -267,8 +262,8 @@ export default function CurriculumPage() {
         padding: '2rem'
       }}>
         <h1 style={{
-          color: 'white',
-          fontSize: '3rem',
+          color: '#e0e0e0',
+          fontSize: '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
           paddingTop: '5rem',
@@ -308,10 +303,12 @@ export default function CurriculumPage() {
                   fontSize: '1.2rem',
                   border: 'none',
                   background: activeTab === tab ? 'rgba(10, 11, 26, 0.5)' : 'transparent',
-                  color: 'white',
+                  color: '#e0e0e0',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                  borderBottom: activeTab === tab ? '2px solid #60A5FA' : 'none'
+                  borderBottom: activeTab === tab ? '2px solid #60A5FA' : 'none',
+                  fontWeight: '500',
+                  fontFamily: "var(--font-noto), sans-serif",
                 }}
               >
                 {tab === '2day' ? '2-Day Course' : '5-Day Course'}
@@ -341,14 +338,16 @@ export default function CurriculumPage() {
                   key={index}
                   onClick={() => setActiveDay(index)}
                   style={{
-                    padding: '1rem',
-                    fontSize: '1.1rem',
+                    padding: '0.9rem',
+                    fontSize: '1rem',
                     borderRadius: '0.2rem',
                     border: 'none',
-                    background: activeDay === index ? '#60A5FA' : 'rgba(10, 11, 26, 0.3)',
-                    color: 'white',
+                    background: activeDay === index ? 'rgba(72, 75, 102)' : 'rgba(10, 11, 26, 0.3)',
+                    color: '#e0e0e0',
                     cursor: 'pointer',
-                    transition: 'all 0.3s ease'
+                    transition: 'all 0.3s ease',
+                    fontWeight: '500',
+                    fontFamily: "var(--font-inter), sans-serif",
                   }}
                 >
                   {day.day}
@@ -393,8 +392,7 @@ export default function CurriculumPage() {
                             style={{
                                 fontSize: '1.2rem',
                               color: '#60A5FA',
-                              textDecoration: 'underline',
-                              fontWeight: 'bold'
+                              textDecoration: 'underline'
                             }}
                             className="hover-purple"
                           >

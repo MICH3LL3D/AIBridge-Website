@@ -26,7 +26,7 @@ const Navbar = () => {
       width: '100%',
       zIndex: 50,
       backgroundColor: scrolled 
-        ? 'rgba(96, 165, 250, 0.7)'  // Semi-transparent blue when scrolled
+        ? 'rgba(72, 75, 102, 0.7)'  // Semi-transparent blue when scrolled
         : 'transparent',              // Transparent when at top
       backdropFilter: scrolled ? 'blur(10px)' : 'none',
       transition: 'all 0.3s ease',
@@ -58,26 +58,29 @@ const Navbar = () => {
           gap: '2rem'
         }} className="nav-links">
           <Link href="/team" style={{
-            color: 'white',
+            color: '#e0e0e0',
             textDecoration: 'none',
             transition: 'color 0.3s',
-            fontSize: '1.2rem'
+            fontSize: '1.2rem',
+            fontWeight: '300'
           }} className="nav-link">
             Our Team
           </Link>
           <Link href="/curriculum" style={{
-            color: 'white',
+            color: '#e0e0e0',
             textDecoration: 'none',
             transition: 'color 0.3s',
-            fontSize: '1.2rem'
+            fontSize: '1.2rem',
+            fontWeight: '300'
           }} className="nav-link">
             Curriculum
           </Link>
           <Link href="/events" style={{
-            color: 'white',
+            color: '#e0e0e0',
             textDecoration: 'none',
             transition: 'color 0.3s',
-            fontSize: '1.2rem'
+            fontSize: '1.2rem',
+            fontWeight: '300'
           }} className="nav-link">
             Events
           </Link>
@@ -89,13 +92,13 @@ const Navbar = () => {
           marginLeft: 'auto',
           paddingRight: '3rem'
         }}>
-          <Link href="mailto:aibridgecamp@gmail.com" style={{ color: 'white' }}>
+          <Link href="mailto:aibridgecamp@gmail.com" style={{ color: '#e0e0e0' }}>
             <FontAwesomeIcon 
               icon={faEnvelope} 
               size="2x"
             />
           </Link>
-          <Link href="https://linkedin.com/your-profile" style={{ color: 'white' }}>
+          <Link href="https://linkedin.com/your-profile" style={{ color: '#e0e0e0' }}>
             <FontAwesomeIcon 
               icon={faLinkedin} 
               size="2x"

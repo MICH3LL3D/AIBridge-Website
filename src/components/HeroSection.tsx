@@ -50,10 +50,11 @@ const HeroSection = () => {
           }}
           className="hover-blue"
         >
-          <span style={{
-            color: '#60A5FA',
-            fontSize: '1.7rem'
-           }}>See More</span>
+          <p style={{
+            fontWeight: '500',
+            fontSize: '1.3rem',
+            fontFamily: "'Noto Sans', sans-serif",
+          }}>See More</p>
           <svg 
             style={{
               width: '2rem',

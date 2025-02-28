@@ -4,17 +4,16 @@ const Footer = () => {
       className="footer"
       style={{
         backgroundColor: "transparent",
-        color: "white",
+        color: "#e0e0e0",
         display: 'flex',
         alignItems: 'center',
         justifyContent: "center", 
-        marginLeft: '-4rem%',
         paddingTop: '2rem',
         paddingBottom: '3rem',
         width: "100%", 
       }}
     >
-      <p>© {new Date().getFullYear()} AIBridge MK. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} AIBridge M. All rights reserved.</p>
     </footer>
   );
 };
