@@ -4,7 +4,7 @@ const Footer = () => {
       className="footer"
       style={{
         backgroundColor: "transparent",
-        color: "#e0e0e0",
+        color: "#d2d4d6",
         display: 'flex',
         alignItems: 'center',
         justifyContent: "center", 

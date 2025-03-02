@@ -58,7 +58,7 @@ const Navbar = () => {
           gap: '2rem'
         }} className="nav-links">
           <Link href="/team" style={{
-            color: '#e0e0e0',
+            color: '#d2d4d6',
             textDecoration: 'none',
             transition: 'color 0.3s',
             fontSize: '1.2rem',
@@ -67,7 +67,7 @@ const Navbar = () => {
             Our Team
           </Link>
           <Link href="/curriculum" style={{
-            color: '#e0e0e0',
+            color: '#d2d4d6',
             textDecoration: 'none',
             transition: 'color 0.3s',
             fontSize: '1.2rem',
@@ -76,7 +76,7 @@ const Navbar = () => {
             Curriculum
           </Link>
           <Link href="/events" style={{
-            color: '#e0e0e0',
+            color: '#d2d4d6',
             textDecoration: 'none',
             transition: 'color 0.3s',
             fontSize: '1.2rem',

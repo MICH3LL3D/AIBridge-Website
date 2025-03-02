@@ -46,7 +46,7 @@ const MissionSection = () => {
           </h3>
           <p style={{
             fontSize: '1.5rem',
-            color: '#e0e0e0',
+            color: '#d2d4d6',
             lineHeight: '1.8',
             marginBottom: '2rem'
           }}>

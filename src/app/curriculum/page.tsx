@@ -262,7 +262,7 @@ export default function CurriculumPage() {
         padding: '2rem'
       }}>
         <h1 style={{
-          color: '#e0e0e0',
+          color: '#d2d4d6',
           fontSize: '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
@@ -303,12 +303,12 @@ export default function CurriculumPage() {
                   fontSize: '1.2rem',
                   border: 'none',
                   background: activeTab === tab ? 'rgba(10, 11, 26, 0.5)' : 'transparent',
-                  color: '#e0e0e0',
+                  color: '#d2d4d6',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
                   borderBottom: activeTab === tab ? '2px solid #60A5FA' : 'none',
                   fontWeight: '500',
-                  fontFamily: "var(--font-noto), sans-serif",
+                  fontFamily: "var(--font-inter), sans-serif",
                 }}
               >
                 {tab === '2day' ? '2-Day Course' : '5-Day Course'}
@@ -343,7 +343,7 @@ export default function CurriculumPage() {
                     borderRadius: '0.2rem',
                     border: 'none',
                     background: activeDay === index ? 'rgba(72, 75, 102)' : 'rgba(10, 11, 26, 0.3)',
-                    color: '#e0e0e0',
+                    color: '#d2d4d6',
                     cursor: 'pointer',
                     transition: 'all 0.3s ease',
                     fontWeight: '500',

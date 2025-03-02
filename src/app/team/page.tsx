@@ -215,7 +215,7 @@ export default function TeamPage() {
         padding: '2rem'
       }}>
         <h1 style={{ 
-          color: '#e0e0e0',
+          color: '#d2d4d6',
           fontSize: '4rem',
           textAlign: 'center',
           marginBottom: '3rem',

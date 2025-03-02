@@ -24,7 +24,7 @@ const EventCard = ({ title, date, imagePrefix, imageCount }: EventCardProps) => 
 
   return (
     <div style={{
-      backgroundColor: '#e0e0e0',
+      backgroundColor: '#d2d4d6',
       borderRadius: '10px',
       overflow: 'hidden',
       boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',

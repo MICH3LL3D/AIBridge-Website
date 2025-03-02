@@ -18,7 +18,7 @@ const HeroSection = () => {
       position: 'relative',
     }}>
       <h1 style={{
-        fontSize: '10rem',
+        fontSize: '9rem',
         fontWeight: 300,
         marginTop: '13rem',
         opacity: isVisible ? 1 : 0,
@@ -32,7 +32,7 @@ const HeroSection = () => {
         }}>AIBridge</span>
       </h1>
       
-      <div style={{ marginTop: '0rem' }}>
+      <div style={{ marginTop: '-2rem' }}>
         <button 
           onClick={() => {
             const element = document.getElementById('mission')
@@ -52,14 +52,14 @@ const HeroSection = () => {
         >
           <p style={{
             fontWeight: '500',
-            fontSize: '1.3rem',
-            fontFamily: "'Noto Sans', sans-serif",
+            fontSize: '1.7rem',
+            fontFamily: "'Martel', serif",
           }}>See More</p>
           <svg 
             style={{
               width: '2rem',
               height: '2rem',
-              marginTop: '2.5rem',
+              marginTop: '0.5rem',
               animation: 'bounce 1s infinite'
             }}
             fill="none" 

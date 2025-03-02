@@ -19,7 +19,6 @@ body {
   color: black;
   background: url('/img/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: var(--font-noto), sans-serif;
 }
 
 h1 {
@@ -31,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 400; 
+  font-weight: 500; 
 }
 
 p {

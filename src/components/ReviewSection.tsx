@@ -53,7 +53,7 @@ const ReviewSection = () => {
       <h2 style={{
         fontSize: '3rem',
         color: 'white',
-        marginBottom: '3rem',
+        marginBottom: '1rem',
         background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
@@ -107,7 +107,7 @@ const ReviewSection = () => {
 
         <div style={{
           textAlign: 'center',
-          minHeight: '200px',
+          minHeight: '250px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -116,7 +116,7 @@ const ReviewSection = () => {
         }}>
           <p style={{
             fontSize: '1.3rem',
-            color: '#e0e0e0',
+            color: '#d2d4d6',
             marginBottom: '2rem',
             lineHeight: '1.6',
             fontStyle: 'italic'
