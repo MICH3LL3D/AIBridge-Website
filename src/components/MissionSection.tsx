@@ -1,10 +1,12 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import ReviewSection from './ReviewSection'
 import { useScrollFade } from '@/hooks/useScrollFade'
 
 const MissionSection = () => {
   const isVisible = useScrollFade()
+  const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  const isMobile = windowWidth < 768
 
   return (
     <>
@@ -25,7 +27,7 @@ const MissionSection = () => {
           transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
         }}>
           <h2 style={{
-            fontSize: '3.5rem',
+            fontSize: isMobile ? '2.3rem' : '3.5rem',
             color: 'white',
             marginBottom: '2rem',
             background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
@@ -35,7 +37,7 @@ const MissionSection = () => {
             Our Mission
           </h2>
           <h3 style={{
-            fontSize: '2.5rem',
+            fontSize: isMobile ? '1.5rem' : '2.5rem',
             color: 'white',
             marginBottom: '2rem',
             background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
@@ -45,7 +47,7 @@ const MissionSection = () => {
             Bridging the Gap Between AI and Industry
           </h3>
           <p style={{
-            fontSize: '1.5rem',
+            fontSize: isMobile ? '1rem' : '1.5rem',
             color: '#d2d4d6',
             lineHeight: '1.8',
             marginBottom: '2rem'

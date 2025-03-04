@@ -1,4 +1,10 @@
+'use client'
+import React, { useState } from 'react'
+
 const Footer = () => {
+  const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  const isMobile = windowWidth < 768
+
   return (
     <footer
       className="footer"
@@ -8,8 +14,8 @@ const Footer = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: "center", 
-        paddingTop: '2rem',
-        paddingBottom: '3rem',
+        paddingTop: isMobile ? '1rem' : '2rem',
+        paddingBottom: isMobile ? '1.5rem' : '3rem',
         width: "100%", 
       }}
     >

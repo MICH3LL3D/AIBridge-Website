@@ -24,6 +24,8 @@ const reviews: Review[] = [
 
 const ReviewSection = () => {
   const [currentReview, setCurrentReview] = useState(0)
+  const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  const isMobile = windowWidth < 768
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -51,7 +53,7 @@ const ReviewSection = () => {
       padding: '4rem 2rem'
     }}>
       <h2 style={{
-        fontSize: '3rem',
+        fontSize: isMobile ? '2.3rem' : '3rem',
         color: 'white',
         marginBottom: '1rem',
         background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
@@ -65,7 +67,8 @@ const ReviewSection = () => {
       <div style={{
         maxWidth: '60%',
         position: 'relative',
-        padding: '2rem'
+        padding: '2rem',
+        marginTop: isMobile ? '-3rem' : '0rem'
       }}>
         <button
           onClick={previousReview}
@@ -107,7 +110,7 @@ const ReviewSection = () => {
 
         <div style={{
           textAlign: 'center',
-          minHeight: '250px',
+          minHeight: isMobile ? '50vh' : '250px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -115,7 +118,7 @@ const ReviewSection = () => {
           transition: 'opacity 0.5s ease-in-out'
         }}>
           <p style={{
-            fontSize: '1.3rem',
+            fontSize: isMobile ? '1rem': '1.3rem',
             color: '#d2d4d6',
             marginBottom: '2rem',
             lineHeight: '1.6',
@@ -129,7 +132,7 @@ const ReviewSection = () => {
           display: 'flex',
           justifyContent: 'center',
           gap: '0.5rem',
-          marginTop: '2rem'
+          marginTop: isMobile ? '0rem' : '2rem'
         }}>
           {reviews.map((_, index) => (
             <button

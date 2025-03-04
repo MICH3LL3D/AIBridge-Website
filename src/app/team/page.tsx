@@ -242,7 +242,7 @@ export default function TeamPage() {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '2rem',
-          maxWidth: '1200px',
+          maxWidth: '100%',
           margin: '0 auto'
         }}>
           {currentMembers.map((member, index) => (
@@ -277,7 +277,7 @@ export default function TeamPage() {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '2rem',
-          maxWidth: '1200px',
+          maxWidth: '100%',
           margin: '0 auto'
         }}>
           {pastMembers.map((member, index) => (

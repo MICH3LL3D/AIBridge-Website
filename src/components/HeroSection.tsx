@@ -3,10 +3,16 @@ import React, { useState, useEffect } from 'react'
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false)
+  const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
 
   useEffect(() => {
     setIsVisible(true)
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
+
+  const isMobile = windowWidth < 768
 
   return (
     <section style={{
@@ -18,9 +24,9 @@ const HeroSection = () => {
       position: 'relative',
     }}>
       <h1 style={{
-        fontSize: '9rem',
+        fontSize: isMobile ? '4.5rem' : '9rem',
         fontWeight: 300,
-        marginTop: '13rem',
+        marginTop: isMobile ? '5rem' : '13rem',
         opacity: isVisible ? 1 : 0,
         transition: 'opacity 0.8s ease-in-out',
         textAlign: 'center'
@@ -32,7 +38,7 @@ const HeroSection = () => {
         }}>AIBridge</span>
       </h1>
       
-      <div style={{ marginTop: '-2rem' }}>
+      <div style={{ marginTop: isMobile ? '-1rem' : '-2rem' }}>
         <button 
           onClick={() => {
             const element = document.getElementById('mission')
@@ -52,13 +58,13 @@ const HeroSection = () => {
         >
           <p style={{
             fontWeight: '500',
-            fontSize: '1.7rem',
+            fontSize: isMobile ? '1.7rem' : '1.7rem',
             fontFamily: "'Martel', serif",
           }}>See More</p>
           <svg 
             style={{
-              width: '2rem',
-              height: '2rem',
+              width: isMobile ? '1.5rem' : '2rem',
+              height: isMobile ? '1.5rem' : '2rem',
               marginTop: '0.5rem',
               animation: 'bounce 1s infinite'
             }}
@@ -79,4 +85,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection 
+export default HeroSection
