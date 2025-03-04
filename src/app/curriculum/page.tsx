@@ -254,7 +254,7 @@ export default function CurriculumPage() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  const isMobile = windowWidth < 768
+  const isMobile = windowWidth < 900
   const currentCurriculum = activeTab === '5day' ? fiveDayCurriculum : twoDayCurriculum
 
   return (
@@ -273,7 +273,7 @@ export default function CurriculumPage() {
       }}>
         <h1 style={{
           color: '#d2d4d6',
-          fontSize: isMobile ? '3rem' : '4rem',
+          fontSize: isMobile ? '2.7rem' : '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
           paddingTop: isMobile ? '2rem' : '5rem',
