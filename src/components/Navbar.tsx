@@ -39,9 +39,13 @@ const Navbar = () => {
       position: 'fixed',
       width: '100%',
       zIndex: 50,
-      backgroundColor: scrolled 
-        ? 'rgba(72, 75, 102, 0.7)'  // Semi-transparent blue when scrolled
-        : 'transparent',              // Transparent when at top
+      backgroundColor: isMobile ? 
+        scrolled 
+        ? 'rgba(72, 75, 102, 0.7)'  
+        : 'transparent':
+        scrolled
+        ? 'rgba(72, 75, 102, 0.9)' 
+        : 'transparent',             
       backdropFilter: scrolled ? 'blur(10px)' : 'none',
       transition: 'all 0.3s ease',
       padding: '1rem'

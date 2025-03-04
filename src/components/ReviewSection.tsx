@@ -131,7 +131,7 @@ const ReviewSection = () => {
         <div style={{
           display: 'flex',
           justifyContent: 'center',
-          gap: '0.5rem',
+          gap: isMobile ? '0rem': '0.5rem',
           marginTop: isMobile ? '0rem' : '2rem'
         }}>
           {reviews.map((_, index) => (
@@ -139,8 +139,8 @@ const ReviewSection = () => {
               key={index}
               onClick={() => setCurrentReview(index)}
               style={{
-                width: isMobile ? '5x' : '12px',
-                height: isMobile ? '5px' : '12px',
+                width: isMobile ? '3x' : '12px',
+                height: isMobile ? '7px' : '12px',
                 borderRadius: '50%',
                 border: 'none',
                 backgroundColor: currentReview === index ? '#A78BFA' : '#60A5FA',
