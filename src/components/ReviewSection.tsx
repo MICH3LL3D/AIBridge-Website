@@ -110,7 +110,7 @@ const ReviewSection = () => {
 
         <div style={{
           textAlign: 'center',
-          minHeight: isMobile ? '70vh' : '250px',
+          minHeight: isMobile ? '60vh' : '250px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -131,7 +131,7 @@ const ReviewSection = () => {
         <div style={{
           display: 'flex',
           justifyContent: 'center',
-          gap: isMobile ? '3.5rem' : '0.5rem',
+          gap: isMobile ? '1.5rem' : '0.5rem',
           marginTop: isMobile ? '0rem' : '2rem'
         }}>
           {reviews.map((_, index) => (
@@ -140,7 +140,7 @@ const ReviewSection = () => {
               onClick={() => setCurrentReview(index)}
               style={{
                 width: isMobile ? '5x' : '12px',
-                height: '12px',
+                height: isMobile ? '5px' : '12px',
                 borderRadius: '50%',
                 border: 'none',
                 backgroundColor: currentReview === index ? '#A78BFA' : '#60A5FA',
