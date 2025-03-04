@@ -14,6 +14,8 @@ interface EventRowProps {
 
 const EventRow = ({ events, rowIndex }: EventRowProps) => {
   const [isVisible, setIsVisible] = useState(false)
+  const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  const isMobile = windowWidth < 900
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -46,7 +48,7 @@ const EventRow = ({ events, rowIndex }: EventRowProps) => {
         gap: '2rem',
         opacity: isVisible ? 1 : 0,
         transform: `translateY(${isVisible ? 0 : '20px'})`,
-        transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
+        transition: isMobile ? 'opacity 0.2s ease-out, transform 0.2s ease-out' : 'opacity 0.6s ease-out, transform 0.6s ease-out',
         transitionDelay: `${rowIndex * 0.2}s`
       }}
     >

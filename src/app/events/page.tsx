@@ -68,6 +68,7 @@ const events = [
 
 export default function EventsPage() {
   const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  const isMobile = windowWidth < 900
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth)
@@ -102,7 +103,7 @@ export default function EventsPage() {
       }}>
         <h1 style={{
           color: 'white',
-          fontSize: '4rem',
+          fontSize: isMobile ? '2rem' : '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
           paddingTop: '5rem',
