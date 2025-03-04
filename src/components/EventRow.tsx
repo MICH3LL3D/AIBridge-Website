@@ -48,7 +48,7 @@ const EventRow = ({ events, rowIndex }: EventRowProps) => {
         gap: '2rem',
         opacity: isVisible ? 1 : 0,
         transform: `translateY(${isVisible ? 0 : '20px'})`,
-        transition: isMobile ? 'opacity 0.2s ease-out, transform 0.2s ease-out' : 'opacity 0.6s ease-out, transform 0.6s ease-out',
+        transition: isMobile ? 'opacity 0.4s ease-out, transform 0.4s ease-out' : 'opacity 0.6s ease-out, transform 0.6s ease-out',
         transitionDelay: `${rowIndex * 0.2}s`
       }}
     >
