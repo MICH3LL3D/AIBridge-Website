@@ -99,6 +99,8 @@ const pastMembers: TeamMember[] = [
 
 const MemberCard = ({ member }: { member: TeamMember }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  const isMobile = windowWidth < 900
 
   return (
     <>
@@ -176,6 +178,8 @@ const MemberCard = ({ member }: { member: TeamMember }) => {
 
 export default function TeamPage() {
   const [visibleMembers, setVisibleMembers] = useState<number[]>([])
+  const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  const isMobile = windowWidth < 900
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -216,7 +220,7 @@ export default function TeamPage() {
       }}>
         <h1 style={{ 
           color: '#d2d4d6',
-          fontSize: '4rem',
+          fontSize: isMobile ? '2.8rem' : '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
           paddingTop: '5rem',
@@ -229,7 +233,7 @@ export default function TeamPage() {
 
         <h2 style={{
           color: 'white',
-          fontSize: '2.5rem',
+          fontSize: isMobile ? '1.8rem' : '2.5rem',
           marginBottom: '2rem',
           marginLeft: '1rem',
           background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
@@ -263,7 +267,7 @@ export default function TeamPage() {
 
         <h2 style={{
           color: 'white',
-          fontSize: '2.5rem',
+          fontSize: isMobile ? '1.8rem' : '2.5rem',
           marginBottom: '2rem',
           paddingTop: '2rem',
           marginLeft: '1rem',
