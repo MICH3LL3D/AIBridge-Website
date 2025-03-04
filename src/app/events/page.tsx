@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import EventRow from '@/components/EventRow'
 
@@ -67,9 +67,18 @@ const events = [
 ]
 
 export default function EventsPage() {
-  // Group events into rows of 3
+  const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  // Group events into rows: 1 per row on small screens, 3 per row on larger screens
+  const groupSize = windowWidth < 900 ? 1 : 3
   const rows = events.reduce((acc, event, i) => {
-    const rowIndex = Math.floor(i / 3)
+    const rowIndex = Math.floor(i / groupSize)
     if (!acc[rowIndex]) {
       acc[rowIndex] = []
     }
@@ -122,4 +131,4 @@ export default function EventsPage() {
       </div>
     </main>
   )
-} 
+}

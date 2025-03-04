@@ -140,7 +140,7 @@ const ReviewSection = () => {
               onClick={() => setCurrentReview(index)}
               style={{
                 width: isMobile ? '3x' : '12px',
-                height: isMobile ? '7px' : '12px',
+                height: isMobile ? '3px' : '12px',
                 borderRadius: '50%',
                 border: 'none',
                 backgroundColor: currentReview === index ? '#A78BFA' : '#60A5FA',

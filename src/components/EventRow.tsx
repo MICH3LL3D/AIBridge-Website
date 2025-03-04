@@ -63,4 +63,4 @@ const EventRow = ({ events, rowIndex }: EventRowProps) => {
   )
 }
 
-export default EventRow 
+export default EventRow

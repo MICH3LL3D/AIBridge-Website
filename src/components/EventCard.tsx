@@ -12,15 +12,22 @@ interface EventCardProps {
 
 const EventCard = ({ title, date, imagePrefix, imageCount }: EventCardProps) => {
   const [currentImage, setCurrentImage] = useState(0)
-  const images = Array.from({ length: imageCount }, (_, i) => `${imagePrefix}${i + 1}.jpeg`)
-
+  const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
+  
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % imageCount)
     }, 5000)
-
-    return () => clearInterval(timer)
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => {
+      clearInterval(timer)
+      window.removeEventListener('resize', handleResize)
+    }
   }, [imageCount])
+
+  const isMobile = windowWidth < 900
+  const images = Array.from({ length: imageCount }, (_, i) => `${imagePrefix}${i + 1}.jpeg`)
 
   return (
     <div style={{
@@ -28,8 +35,8 @@ const EventCard = ({ title, date, imagePrefix, imageCount }: EventCardProps) => 
       borderRadius: '10px',
       overflow: 'hidden',
       boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-      width: '350px',
-      minWidth: '350px',
+      width: isMobile ? '90%' : '350px',
+      minWidth: isMobile ? 'auto' : '350px',
       margin: '1rem',
       position: 'relative'
     }}>
@@ -150,4 +157,4 @@ const EventCard = ({ title, date, imagePrefix, imageCount }: EventCardProps) => 
   )
 }
 
-export default EventCard 
+export default EventCard
