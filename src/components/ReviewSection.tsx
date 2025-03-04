@@ -25,7 +25,7 @@ const reviews: Review[] = [
 const ReviewSection = () => {
   const [currentReview, setCurrentReview] = useState(0)
   const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
-  const isMobile = windowWidth < 768
+  const isMobile = windowWidth < 900
 
   useEffect(() => {
     const timer = setInterval(() => {

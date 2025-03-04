@@ -12,7 +12,7 @@ const HeroSection = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  const isMobile = windowWidth < 768
+  const isMobile = windowWidth < 900
 
   return (
     <section style={{

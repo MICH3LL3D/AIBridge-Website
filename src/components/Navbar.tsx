@@ -20,7 +20,7 @@ const Navbar = () => {
     }
     const handleResize = () => {
       setWindowWidth(window.innerWidth)
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 900) {
         setMenuOpen(false) // Ensure menu is closed on larger screens
       }
     }
@@ -32,7 +32,7 @@ const Navbar = () => {
     }
   }, [])
 
-  const isMobile = windowWidth < 768
+  const isMobile = windowWidth < 900
 
   return (
     <nav style={{

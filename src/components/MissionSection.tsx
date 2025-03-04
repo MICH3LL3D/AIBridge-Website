@@ -6,7 +6,7 @@ import { useScrollFade } from '@/hooks/useScrollFade'
 const MissionSection = () => {
   const isVisible = useScrollFade()
   const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
-  const isMobile = windowWidth < 768
+  const isMobile = windowWidth < 900
 
   return (
     <>

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 const Footer = () => {
   const [windowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024)
-  const isMobile = windowWidth < 768
+  const isMobile = windowWidth < 900
 
   return (
     <footer
