@@ -110,7 +110,7 @@ const ReviewSection = () => {
 
         <div style={{
           textAlign: 'center',
-          minHeight: isMobile ? '50vh' : '250px',
+          minHeight: isMobile ? '70vh' : '250px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -139,7 +139,7 @@ const ReviewSection = () => {
               key={index}
               onClick={() => setCurrentReview(index)}
               style={{
-                width: '12px',
+                width: isMobile ? '5x' : '12px',
                 height: '12px',
                 borderRadius: '50%',
                 border: 'none',
