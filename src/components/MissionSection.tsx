@@ -20,7 +20,7 @@ const MissionSection = () => {
         padding: '2rem'
       }}>
         <div id="scroll-fade" style={{
-          maxWidth: isMobile ? '85%' : '70%',
+          maxWidth: isMobile ? '100%' : '70%',
           textAlign: 'center',
           opacity: isVisible ? 1 : 0,
           transform: `translateY(${isVisible ? 0 : '20px'})`,

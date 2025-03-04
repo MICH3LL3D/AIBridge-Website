@@ -110,7 +110,7 @@ const ReviewSection = () => {
 
         <div style={{
           textAlign: 'center',
-          minHeight: isMobile ? '60vh' : '250px',
+          minHeight: isMobile ? '55vh' : '250px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -131,7 +131,7 @@ const ReviewSection = () => {
         <div style={{
           display: 'flex',
           justifyContent: 'center',
-          gap: isMobile ? '1.5rem' : '0.5rem',
+          gap: '0.5rem',
           marginTop: isMobile ? '0rem' : '2rem'
         }}>
           {reviews.map((_, index) => (
