@@ -168,7 +168,7 @@ const MemberCard = ({ member }: { member: TeamMember }) => {
         )}
       </div>
       <Modal
-        isOpen={isModalOpen}
+        isOpen={!isMobile && isModalOpen} // if isMobile is true, modal never opens
         onClose={() => setIsModalOpen(false)}
         member={member}
       />
@@ -220,7 +220,7 @@ export default function TeamPage() {
       }}>
         <h1 style={{ 
           color: '#d2d4d6',
-          fontSize: isMobile ? '2.8rem' : '4rem',
+          fontSize: isMobile ? '3rem' : '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
           paddingTop: '5rem',
@@ -233,7 +233,7 @@ export default function TeamPage() {
 
         <h2 style={{
           color: 'white',
-          fontSize: isMobile ? '1.8rem' : '2.5rem',
+          fontSize: isMobile ? '2.1rem' : '2.5rem',
           marginBottom: '2rem',
           marginLeft: '1rem',
           background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
@@ -267,7 +267,7 @@ export default function TeamPage() {
 
         <h2 style={{
           color: 'white',
-          fontSize: isMobile ? '1.8rem' : '2.5rem',
+          fontSize: isMobile ? '2.1rem' : '2.5rem',
           marginBottom: '2rem',
           paddingTop: '2rem',
           marginLeft: '1rem',
