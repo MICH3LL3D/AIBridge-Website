@@ -42,10 +42,8 @@ const Modal = ({ isOpen, onClose, member }: ModalProps) => {
         style={{
           position: 'relative',
           width: '90vw',
-          minWidth: '80vw',       
-          minHeight: '50vh', 
-          maxWidth: '90vw',      
-          maxHeight: '60vh',     
+          maxWidth: '90vw',       // ensure it can't exceed 90vw
+          maxHeight: '90vh',      // if content is taller than screen, scroll
           overflowY: 'auto',
           backgroundColor: '#fff',
           borderRadius: '1rem',
