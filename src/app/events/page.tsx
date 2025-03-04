@@ -103,7 +103,7 @@ export default function EventsPage() {
       }}>
         <h1 style={{
           color: 'white',
-          fontSize: isMobile ? '2.5rem' : '4rem',
+          fontSize: isMobile ? '2.7rem' : '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
           paddingTop: '5rem',
