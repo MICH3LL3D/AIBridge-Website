@@ -273,10 +273,10 @@ export default function CurriculumPage() {
       }}>
         <h1 style={{
           color: '#d2d4d6',
-          fontSize: isMobile ? '2.7rem' : '4rem',
+          fontSize: isMobile ? '2.9rem' : '4rem',
           textAlign: 'center',
           marginBottom: '3rem',
-          paddingTop: isMobile ? '2rem' : '5rem',
+          paddingTop: isMobile ? '4rem' : '5rem',
           background: 'linear-gradient(to right, #A78BFA, #60A5FA)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
@@ -346,7 +346,8 @@ export default function CurriculumPage() {
               gap: '1rem',
               minWidth: isMobile ? 'auto' : '150px',
               paddingRight: isMobile ? '0' : '2.5rem',
-              overflowX: isMobile ? 'auto' : 'visible'
+              overflowX: isMobile ? 'auto' : 'visible',
+              position: isMobile ? 'relative' : 'initial'
             }}>
               {currentCurriculum.map((day, index) => (
                 <button
@@ -369,6 +370,16 @@ export default function CurriculumPage() {
                   {day.day}
                 </button>
               ))}
+              {isMobile && (
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  height: '4px',
+                  background: 'linear-gradient(to right, #60A5FA, #A78BFA)'
+                }} />
+              )}
             </div>
 
             {/* Day Content */}
