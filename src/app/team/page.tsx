@@ -82,7 +82,7 @@ const pastMembers: TeamMember[] = [
     },
   {
     name: "Jiaming Situ",
-    role: "Founder & Former Instructor",
+    role: "Former Instructor",
     image: "/img/team/about_me_3.jpg",
     description: "Jiaming Situ was a Senior at Homestead High School who has been coding competitively since 7th grade. He has studied deep learning through programs at New York University and Yale and has written an academic paper focused on generative adversarial neural networks. Jiaming is also vice president of his school's AI club and teaches other students at his school about machine learning.",
     linkedin: "https://linkedin.com/in/..."
