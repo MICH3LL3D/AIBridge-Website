@@ -388,7 +388,7 @@ export default function CurriculumPage() {
               color: 'white'
             }}>
               {currentCurriculum[activeDay].content.map((section, sectionIndex) => (
-                <div key={sectionIndex} style={{ marginBottom: isMobile ? '1rem' : '2rem' }}>
+                <div key={sectionIndex} style={{ marginBottom: isMobile ? '1rem' : '0.2rem' }}>
                   <div style={{
                     display: 'flex',
                     flexDirection: isMobile ? 'column' : 'row',
