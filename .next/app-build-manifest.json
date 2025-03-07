@@ -15,6 +15,16 @@
       "static/css/0981ed466b8b6fc1.css",
       "static/chunks/app/layout-a96f9eeac4af7ca5.js"
     ],
+    "/page": [
+      "static/chunks/webpack-b5ed126c40710628.js",
+      "static/chunks/fd9d1056-5c09fb93fb3ebc25.js",
+      "static/chunks/117-481e237f9e5dc37b.js",
+      "static/chunks/main-app-dfbe17b09444d7c1.js",
+      "static/chunks/870fdd6f-36ba406760a40d83.js",
+      "static/chunks/69b09407-eb9a31840869d115.js",
+      "static/chunks/373-fd7c57e936c5d418.js",
+      "static/chunks/app/page-123af0fe8a5e0cc6.js"
+    ],
     "/curriculum/page": [
       "static/chunks/webpack-b5ed126c40710628.js",
       "static/chunks/fd9d1056-5c09fb93fb3ebc25.js",
@@ -23,7 +33,7 @@
       "static/chunks/870fdd6f-36ba406760a40d83.js",
       "static/chunks/69b09407-eb9a31840869d115.js",
       "static/chunks/373-fd7c57e936c5d418.js",
-      "static/chunks/app/curriculum/page-65ea8963ee687ee9.js"
+      "static/chunks/app/curriculum/page-a60c0793b73d8034.js"
     ],
     "/events/page": [
       "static/chunks/webpack-b5ed126c40710628.js",
@@ -34,16 +44,6 @@
       "static/chunks/69b09407-eb9a31840869d115.js",
       "static/chunks/373-fd7c57e936c5d418.js",
       "static/chunks/app/events/page-579a092f9f031a48.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-b5ed126c40710628.js",
-      "static/chunks/fd9d1056-5c09fb93fb3ebc25.js",
-      "static/chunks/117-481e237f9e5dc37b.js",
-      "static/chunks/main-app-dfbe17b09444d7c1.js",
-      "static/chunks/870fdd6f-36ba406760a40d83.js",
-      "static/chunks/69b09407-eb9a31840869d115.js",
-      "static/chunks/373-fd7c57e936c5d418.js",
-      "static/chunks/app/page-123af0fe8a5e0cc6.js"
     ],
     "/team/page": [
       "static/chunks/webpack-b5ed126c40710628.js",

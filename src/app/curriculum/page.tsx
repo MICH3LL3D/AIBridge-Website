@@ -286,7 +286,7 @@ export default function CurriculumPage() {
 
         <div style={{
           display: 'flex',
-          flexDirection: isMobile ? 'column' : 'row',
+          flexDirection: isMobile ? 'column' : 'column',
           gap: '0.7rem',
           maxWidth: '1000px',
           margin: '0 auto'
@@ -294,7 +294,7 @@ export default function CurriculumPage() {
           {/* Course Type Tabs */}
           <div style={{
             display: 'flex',
-            flexDirection: isMobile ? 'row' : 'column',
+            flexDirection: isMobile ? 'row' : 'row',
             gap: '1px',
             backgroundColor: 'rgba(10, 11, 26, 0.3)',
             borderTopLeftRadius: '0.5rem',
